@@ -38,7 +38,7 @@
         class="mr-2 mb-4"
       >
         <span
-          @click="onHandleClick(tag)"
+          @click="onCategorySelect(tag)"
           role="button"
           class="bg-light-cyan text-dark-cyan text-center p-2 tag-item font-weight-bold"
           >{{ tag }}</span
@@ -63,8 +63,8 @@ export default {
     },
   },
   methods: {
-    onHandleClick(str) {
-      this.$emit("clicked-show-detail", str);
+    onCategorySelect(str) {
+      this.$emit("category-selected", str);
     },
   },
   props: {

@@ -36,7 +36,7 @@
       </b-card>
       <template v-for="data in resultQuery">
         <JobBoard
-          @clicked-show-detail="clickedShowDetailModal"
+          @category-selected="collectSelectedCategory"
           :tools="data.tools"
           :languages="data.languages"
           :isNew="data.isNew"
@@ -92,7 +92,7 @@ export default {
         this.selectItem.splice(index, 1);
       }
     },
-    clickedShowDetailModal: function(value) {
+    collectSelectedCategory: function(value) {
       if (this.selectItem.includes(value) === false)
         this.selectItem.push(value);
     },
