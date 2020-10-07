@@ -1,4 +1,6 @@
-# job-listing
+# Job Listing 
+
+# Build on VueJs and bootstrap-vue
 
 ## Project setup
 ```
